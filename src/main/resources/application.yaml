@@ -1,0 +1,33 @@
+spring:
+  profiles:
+    active: local,log
+  jmx:
+    enabled: false
+
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:test;DB_CLOSE_DELAY\=-1
+    username: sa
+    password:
+    platform: h2
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.H2Dialect
+      ddl-auto: create
+      show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        hbm2ddl:
+          import_files: /sql/init.sql
+  h2:
+    console:
+      enabled: true
+      path: /console
+
+# WAS 설정
+server:
+  port: 8083
+  display-name: swc
+  session:
+    timeout: 7200

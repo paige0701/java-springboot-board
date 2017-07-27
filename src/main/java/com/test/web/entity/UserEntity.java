@@ -9,17 +9,13 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="USER")
-public class User {
-
-
+public class UserEntity extends AbstractEntity {
 
     @Id
     private String id;
     private String name;
     private String email;
     private boolean isAdmin;
-
-
 
     // getters and setters
     public String getId() {
