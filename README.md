@@ -3,13 +3,12 @@
 
 This is a personal project to practice basic java, jpa and angular.
 
-DB :  H2 DB  -> mySQL
-JPA : Basic CRUD
+For database, I will be using H2 database.
+This setting is in a file called application.yaml
 
-Till August 2017,
-my goal is to make a simple CRUD board. 
-Just like a blog.
+Basic CRUD function will be added to the board list.
 
-Making it from scratch,
- not easy at all !
- 
+
+Making entities, repositories and services will be added to this project.
+
+
