@@ -9,8 +9,9 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name="POST")
-public class PostEntity extends AbstractEntity {
+public class PostEntity {
 
+    
     @Id
     private String id;
     private String title;
@@ -18,6 +19,28 @@ public class PostEntity extends AbstractEntity {
 
 
 
+    public String getId() {
+        return id;
+    }
 
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
 
 }
