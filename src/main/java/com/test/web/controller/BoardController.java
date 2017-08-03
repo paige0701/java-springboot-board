@@ -3,7 +3,6 @@ package com.test.web.controller;
 import com.test.web.entity.PostEntity;
 import com.test.web.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +14,8 @@ import java.util.List;
 /**
  * Created by paige on 25/7/17.
  */
+
+
 @Controller
 @RequestMapping("/")
 public class BoardController {
