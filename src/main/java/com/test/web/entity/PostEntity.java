@@ -11,12 +11,12 @@ import javax.persistence.Table;
 @Table(name="POST")
 public class PostEntity {
 
+    // JPA에서 entity는 table 로 직접 만들어 진다
     
     @Id
     private String id;
     private String title;
     private String content;
-
 
 
     public String getId() {
