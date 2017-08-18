@@ -20,15 +20,29 @@ public class PostService {
     @Autowired
     PostRepository _postRepository;
 
+    // 포스팅 리스트로 모두 가져오기
     public List<PostEntity> findAll(){
         List<PostEntity> result = _postRepository.findAll();
         return result;
 
     }
 
+    // 하나의 포스트만 가지고오기
     public PostEntity findOne(String id){
         PostEntity result = _postRepository.findOne(id);
         return result;
+    }
+
+    // 포스트 저장
+    public void saveOne(String title, String content) {
+
+        PostEntity post = new PostEntity();
+        post.setContent(content);
+        post.setTitle(title);
+        post.setId("3");
+
+        PostEntity result = _postRepository.save(post);
+
     }
 
 }

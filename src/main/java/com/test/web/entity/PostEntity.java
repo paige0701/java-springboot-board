@@ -12,13 +12,17 @@ import javax.persistence.Table;
 public class PostEntity {
 
     // JPA에서 entity는 table 로 직접 만들어 진다
-    
+
+
     @Id
-    private String id;
-    private String title;
-    private String content;
+    private String id;  // 아이디 - UUID 형식
+    private String title;   // 제목 - 30자 제한
+    private String content; // 내용 -
 
-
+    /**
+     * 포스트의 아이디를 반환한다
+     * @return String 아이디 반환
+     */
     public String getId() {
         return id;
     }
